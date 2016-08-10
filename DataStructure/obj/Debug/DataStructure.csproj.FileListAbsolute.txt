@@ -6,3 +6,6 @@ c:\users\gezox\documents\visual studio 2013\Projects\DataStructureTest\DataStu\b
 c:\users\gezox\documents\visual studio 2013\Projects\DataStructureTest\DataStu\obj\Debug\DataStructure.csprojResolveAssemblyReference.cache
 c:\users\gezox\documents\visual studio 2013\Projects\DataStructureTest\DataStu\obj\Debug\DataStructure.exe
 c:\users\gezox\documents\visual studio 2013\Projects\DataStructureTest\DataStu\obj\Debug\DataStructure.pdb
+C:\Users\GEZOX\Documents\Visual Studio 2013\Projects\DataStructureTest\DataStructure\bin\Debug\DataStructure.exe.config
+C:\Users\GEZOX\Documents\Visual Studio 2013\Projects\DataStructureTest\DataStructure\obj\Debug\DataStructure.exe
+C:\Users\GEZOX\Documents\Visual Studio 2013\Projects\DataStructureTest\DataStructure\obj\Debug\DataStructure.pdb
