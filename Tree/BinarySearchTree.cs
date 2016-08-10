@@ -7,6 +7,7 @@ namespace Tree
     public class BinarySearchTree<T>
     {
         private BinaryNode<T> _root;
+        public BinaryNode<T> Root { get { return _root; } }
         private IComparer<T> _comparer;
         public BinarySearchTree()
         {
@@ -81,15 +82,36 @@ namespace Tree
              */
         }
 
-        public void Insert(T item) { throw new NotImplementedException(); }
+        public void Insert(T item)
+        {
+            Insert(item, this._root);
+        }
+
+        private BinaryNode<T> Insert(T item, BinaryNode<T> node)
+        {
+            if (node == null) return new BinaryNode<T>(item);
+            var comparerResult = _comparer.Compare(item, node.Element);
+            if (comparerResult > 0) node.Right = Insert(item, node.Right);
+            else if (comparerResult < 0) node.Left = Insert(item, node.Left);
+            else { }
+            return node;
+        }
 
         public void Remove(T item) { throw new NotImplementedException(); }
 
-        public void PrintTree() { throw new NotImplementedException(); }
+        public void PrintTree()
+        {
+            var node = this._root;
+            while (node.Left!=null )
+            {
+                Console.WriteLine(node.Element);
+                node = node.Left;
+            }
+        }
 
     }
 
-    internal class BinaryNode<T>
+    public class BinaryNode<T>
     {
         public BinaryNode(T item) : this(item, null, null) { }
 
