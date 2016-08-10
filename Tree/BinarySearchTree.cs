@@ -4,10 +4,10 @@ using System.Collections.Generic;
 
 namespace Tree
 {
-    public class BinarySearchTree<T>
+    public class BinarySearchTree<T> : ITree<T>
     {
-        private BinaryNode<T> _root;
-        public BinaryNode<T> Root { get { return _root; } }
+        private TreeNode<T> _root;
+        public TreeNode<T> Root { get { return _root; } }
         private IComparer<T> _comparer;
         public BinarySearchTree()
         {
@@ -36,7 +36,7 @@ namespace Tree
             return Contains(item, this._root);
         }
 
-        private bool Contains(T item, BinaryNode<T> node)
+        private bool Contains(T item, TreeNode<T> node)
         {
             var compareResult = _comparer.Compare(node.Element, item);
             if (compareResult > 0)
@@ -53,7 +53,7 @@ namespace Tree
             return FindMin(this._root);
         }
 
-        private T FindMin(BinaryNode<T> node)
+        private T FindMin(TreeNode<T> node)
         {
             if (node == null) return default(T);
             if (node.Left == null) return node.Element;
@@ -66,7 +66,7 @@ namespace Tree
             return FindMax(this._root);
         }
 
-        private T FindMax(BinaryNode<T> node)
+        private T FindMax(TreeNode<T> node)
         {
             //递归写法
             if (node == null) return default(T);
@@ -87,9 +87,9 @@ namespace Tree
             Insert(item, this._root);
         }
 
-        private BinaryNode<T> Insert(T item, BinaryNode<T> node)
+        private TreeNode<T> Insert(T item, TreeNode<T> node)
         {
-            if (node == null) return new BinaryNode<T>(item);
+            if (node == null) return new TreeNode<T>(item);
             var comparerResult = _comparer.Compare(item, node.Element);
             if (comparerResult > 0) node.Right = Insert(item, node.Right);
             else if (comparerResult < 0) node.Left = Insert(item, node.Left);
@@ -102,7 +102,7 @@ namespace Tree
         public void PrintTree()
         {
             var node = this._root;
-            while (node.Left!=null )
+            while (node.Left != null)
             {
                 Console.WriteLine(node.Element);
                 node = node.Left;
@@ -111,19 +111,5 @@ namespace Tree
 
     }
 
-    public class BinaryNode<T>
-    {
-        public BinaryNode(T item) : this(item, null, null) { }
 
-        public BinaryNode(T item, BinaryNode<T> left, BinaryNode<T> right)
-        {
-            this.Element = item;
-            this.Left = left;
-            this.Right = right;
-        }
-
-        public T Element { get; set; }
-        public BinaryNode<T> Left { get; set; }
-        public BinaryNode<T> Right { get; set; }
-    }
 }

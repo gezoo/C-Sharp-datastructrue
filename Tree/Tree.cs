@@ -10,7 +10,7 @@ namespace Tree
     {
     }
 
-    public class TreeNode<T>
+    public class Node<T>
     {
         public T Item { get; set; }
         public TreeNode<T> FristChild { get; set; }
