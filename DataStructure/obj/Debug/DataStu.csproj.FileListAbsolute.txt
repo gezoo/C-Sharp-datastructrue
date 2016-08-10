@@ -1,0 +1,2 @@
+c:\users\gezox\documents\visual studio 2013\Projects\DataStructureTest\DataStu\bin\Debug\DataStu.exe.config
+c:\users\gezox\documents\visual studio 2013\Projects\DataStructureTest\DataStu\bin\Debug\DataStructure.exe.config

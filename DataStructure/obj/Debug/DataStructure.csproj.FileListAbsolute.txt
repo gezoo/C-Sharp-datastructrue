@@ -1,0 +1,8 @@
+c:\users\gezox\documents\visual studio 2013\Projects\DataStructureTest\DataStu\bin\Debug\DataStructure.exe.config
+c:\users\gezox\documents\visual studio 2013\Projects\DataStructureTest\DataStu\bin\Debug\DataStructure.exe
+c:\users\gezox\documents\visual studio 2013\Projects\DataStructureTest\DataStu\bin\Debug\DataStructure.pdb
+c:\users\gezox\documents\visual studio 2013\Projects\DataStructureTest\DataStu\bin\Debug\Link.dll
+c:\users\gezox\documents\visual studio 2013\Projects\DataStructureTest\DataStu\bin\Debug\Link.pdb
+c:\users\gezox\documents\visual studio 2013\Projects\DataStructureTest\DataStu\obj\Debug\DataStructure.csprojResolveAssemblyReference.cache
+c:\users\gezox\documents\visual studio 2013\Projects\DataStructureTest\DataStu\obj\Debug\DataStructure.exe
+c:\users\gezox\documents\visual studio 2013\Projects\DataStructureTest\DataStu\obj\Debug\DataStructure.pdb

@@ -1,0 +1,5 @@
+c:\users\gezox\documents\visual studio 2013\Projects\DataStructureTest\Link\bin\Debug\Link.dll
+c:\users\gezox\documents\visual studio 2013\Projects\DataStructureTest\Link\bin\Debug\Link.pdb
+c:\users\gezox\documents\visual studio 2013\Projects\DataStructureTest\Link\obj\Debug\Link.csprojResolveAssemblyReference.cache
+c:\users\gezox\documents\visual studio 2013\Projects\DataStructureTest\Link\obj\Debug\Link.dll
+c:\users\gezox\documents\visual studio 2013\Projects\DataStructureTest\Link\obj\Debug\Link.pdb
