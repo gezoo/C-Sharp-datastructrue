@@ -14,3 +14,5 @@ C:\Users\GEZOX\Documents\Visual Studio 2013\Projects\DataStructureTest\DataStruc
 C:\Users\GEZOX\Documents\Visual Studio 2013\Projects\DataStructureTest\DataStructure\bin\Debug\Link.dll
 C:\Users\GEZOX\Documents\Visual Studio 2013\Projects\DataStructureTest\DataStructure\bin\Debug\Link.pdb
 C:\Users\GEZOX\Documents\Visual Studio 2013\Projects\DataStructureTest\DataStructure\obj\Debug\DataStructure.csprojResolveAssemblyReference.cache
+C:\Users\GEZOX\Documents\Visual Studio 2013\Projects\DataStructureTest\DataStructure\bin\Debug\Tree.dll
+C:\Users\GEZOX\Documents\Visual Studio 2013\Projects\DataStructureTest\DataStructure\bin\Debug\Tree.pdb

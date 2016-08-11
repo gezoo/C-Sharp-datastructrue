@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Tree
 {
-    interface ITree<T>
+    public interface ITree<T>
     {
         void MakeEmpty();
         bool IsEmpty();
@@ -15,5 +15,7 @@ namespace Tree
         T FindMax();
         void Insert(T item);
         void Remove(T item);
+
+        void PrintTree();
     }
 }

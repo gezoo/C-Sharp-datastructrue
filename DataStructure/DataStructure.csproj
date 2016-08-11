@@ -52,6 +52,10 @@
       <Project>{1dc0a951-02a6-456d-bb0a-0494f3db7d90}</Project>
       <Name>Link</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Tree\Tree.csproj">
+      <Project>{ca5d968f-9ba5-42de-b1ff-7f967bc7710b}</Project>
+      <Name>Tree</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

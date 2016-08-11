@@ -89,7 +89,12 @@ namespace Tree
 
         private TreeNode<T> Insert(T item, TreeNode<T> node)
         {
-            if (node == null) return new TreeNode<T>(item);
+            if (node == null)
+            {
+                var n = new TreeNode<T>(item);
+                if (this._root == null) this._root = n;
+                return n;
+            }
             var comparerResult = _comparer.Compare(item, node.Element);
             if (comparerResult > 0) node.Right = Insert(item, node.Right);
             else if (comparerResult < 0) node.Left = Insert(item, node.Left);
@@ -97,15 +102,51 @@ namespace Tree
             return node;
         }
 
-        public void Remove(T item) { throw new NotImplementedException(); }
+        public void Remove(T item)
+        {
+            Remove(item, this._root);
+        }
+
+        private TreeNode<T> Remove(T item, TreeNode<T> node)
+        {
+            if (node == null) return node;
+            var comparerResult = _comparer.Compare(item, node.Element);
+            if (comparerResult < 0)
+            {
+                node.Left = Remove(item, node.Left);
+            }
+            else if (comparerResult > 0)
+            {
+                node.Right = Remove(item, node.Right);
+            }
+            else
+            {
+                if (node.Left != null && node.Right != null)
+                {
+                    node.Element = FindMin(node.Right);
+                    node.Right = Remove(node.Element, node.Right);
+                }
+                else
+                {
+                    node = node.Left ?? node.Right;
+                }
+            }
+            return node;
+        }
 
         public void PrintTree()
         {
-            var node = this._root;
-            while (node.Left != null)
+            if (IsEmpty()) throw new ArgumentNullException("Root");
+            PrintTree(this._root);
+        }
+
+        private void PrintTree(TreeNode<T> node)
+        {
+            if (node != null)
             {
+                PrintTree(node.Left);
                 Console.WriteLine(node.Element);
-                node = node.Left;
+                PrintTree(node.Right);
             }
         }
 
