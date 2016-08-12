@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="BinarySearchTree.cs" />
     <Compile Include="ITree.cs" />
+    <Compile Include="NonRecursiveBinarySearchTree.cs" />
     <Compile Include="Tree.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TreeNode.cs" />
