@@ -16,6 +16,7 @@ namespace DataStructure
         static void Main(string[] args)
         {
             ITree<int> tree = new BinarySearchTree<int>();
+            ITree<int> tree1 = new NonRecursiveBinarySearchTree<int>();
             Random rd = new Random(1);
             List<int> list = new List<int>();
             for (int i = 0; i < 10; i++)
@@ -33,9 +34,9 @@ namespace DataStructure
             foreach (var i in list)
             {
                 Console.WriteLine(i);
-                tree.Insert(i);
+                tree1.Insert(i);
             }
-             tree.Remove(12);
+             tree1.Remove(7);
             
             Console.ReadKey();
         }

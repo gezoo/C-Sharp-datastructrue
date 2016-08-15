@@ -17,5 +17,7 @@ namespace Tree
         void Remove(T item);
 
         void PrintTree();
+
+        TreeNode<T> Root { get;}
     }
 }

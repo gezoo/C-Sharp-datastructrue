@@ -8,7 +8,7 @@ namespace UnitTestDataStructure
     [TestClass]
     public class BinarySearchTreeTest
     {
-        private BinarySearchTree<int> _tree = new BinarySearchTree<int>();
+        private ITree<int> _tree = new BinarySearchTree<int>();
 
         [TestMethod]
         public void Insert_Test()
@@ -17,7 +17,6 @@ namespace UnitTestDataStructure
             {
                 _tree.Insert(i);
             }
-            Assert.AreEqual(_tree.Root.Element, 5);
         }
     }
 }
